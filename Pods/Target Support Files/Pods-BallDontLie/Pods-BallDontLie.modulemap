@@ -1,0 +1,6 @@
+framework module Pods_BallDontLie {
+  umbrella header "Pods-BallDontLie-umbrella.h"
+
+  export *
+  module * { export * }
+}

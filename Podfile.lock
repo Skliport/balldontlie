@@ -1,0 +1,16 @@
+PODS:
+  - CodableCache (0.2.2)
+
+DEPENDENCIES:
+  - CodableCache
+
+SPEC REPOS:
+  trunk:
+    - CodableCache
+
+SPEC CHECKSUMS:
+  CodableCache: 6bb7d51c4ca2a240d04cba407dd2d1d2fe54b191
+
+PODFILE CHECKSUM: 48cfdf7f165fa709b90eb71839906bc31bced209
+
+COCOAPODS: 1.11.2

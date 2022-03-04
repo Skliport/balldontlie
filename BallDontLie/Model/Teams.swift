@@ -7,9 +7,20 @@
 
 import Foundation
 
+enum TeamViewModelState {
+    case initial
+    case loading
+    case loaded(teamModel: TeamData)
+    case error(errorMessage: String)
+}
+
+struct TeamData: Decodable, Hashable {
+    let data: [Team]?
+}
+
 struct Team: Decodable, Hashable {
     let id: Int?
-    let first_name: String?
+    let abbreviation: String?
     let city: String?
     let conference: String?
     let division: String?

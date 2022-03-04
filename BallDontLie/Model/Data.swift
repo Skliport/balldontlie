@@ -8,16 +8,14 @@
 import Foundation
 
 enum CharacterViewModelState {
-    
-case initial
-case loading
-case loaded(userModel:Data)
-case error(errorMessage:String)
-    
+    case initial
+    case loading
+    case loaded(userModel:Data)
+    case error(errorMessage:String)
 }
 
 struct Data: Decodable, Hashable {
-    let player: [PlayerDetails]?
+    let data: [PlayerDetails]?
 }
 
 struct PlayerDetails: Decodable, Hashable {
@@ -26,7 +24,17 @@ struct PlayerDetails: Decodable, Hashable {
     let last_name: String?
     let position: String?
     let height_feet: Int?
-    let heigth_inches: Int?
+    let height_inches: Int?
     let weight_pounds: Int?
-    let team: Team?
+    let team: Team2?
+}
+
+struct Team2: Decodable, Hashable {
+    let id: Int?
+    let abbreviation: String?
+    let city: String?
+    let conference: String?
+    let division: String?
+    let full_name: String?
+    let name: String?
 }

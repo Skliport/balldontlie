@@ -10,7 +10,7 @@ import Combine
 
 class PlayerViewModel: ObservableObject {
     
-    @Published var charactersState:CharacterViewModelState=CharacterViewModelState.initial
+var charactersState:CharacterViewModelState=CharacterViewModelState.initial
     
     let DataService: Service = Service()
     var cancellable = Set<AnyCancellable>()
